@@ -29,7 +29,6 @@ st.write(
     "registros de impressões 3D para estimar a chance de **sucesso** de uma nova impressão."
 )
 
-# Opções categóricas a partir do dataset (se disponível)
 def get_options(col, default_list):
     if df_ref is not None and col in df_ref.columns:
         vals = sorted(df_ref[col].dropna().unique().tolist())
